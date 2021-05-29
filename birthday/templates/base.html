@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Birthday Girl</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link href="http://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+
+    <style>
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1,input{
+  font-family: "Harry Potter";
+}
+body{
+  background-image:url("{% static "9.jpg" %}");
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+    <!-- CSS only -->
+  </head>
+  <body class="text-center">
+    {% block body_block %}
+    {% endblock %}
+
+
+
+
+  </body>
+
+</html>

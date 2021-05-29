@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block body_block %}
+<img src="{% static "1.jpg" %}" class="center" style="width:35%;">
+<h1 style="padding:12px">Oh You Are Here!!!</h1>
+<form action="page2">
+  {% csrf_token %}
+<input type="submit" class="btn btn-primary" name="firstbutton" style="font-family:Harry Potter; background-color:black;padding:15px 32px;text-align:center;font-size:24px;border-radius:12px;" value="Check In Here!">
+</form>
+{%endblock%}
